@@ -177,6 +177,12 @@
   background-color: #1e90ff;
   margin-right: 12px;
   color: white;
+  overflow: hidden;
+  position: relative;
+}
+
+.aside .admin .logo img {
+  position: absolute;
 }
 
 .aside .functions .function a {
@@ -381,6 +387,11 @@ body {
   padding: 8px 20px;
 }
 
+.main-content .table-container table th img,
+.main-content .table-container table td img {
+  width: 120px;
+}
+
 .main-content .table-container table a {
   font-size: 20px;
 }
@@ -391,6 +402,8 @@ body {
 
 .main-content .table-container table .icon {
   display: block;
+  color: #333;
+  font-size: 30px;
 }
 
 .main-content .table-container table .icon:hover {

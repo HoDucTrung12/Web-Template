@@ -256,7 +256,6 @@ body {
   padding: 20px 40px;
   margin-left: 280px;
   width: calc(100vw - 280px);
-  position: relative;
 }
 
 .main-header {
@@ -288,58 +287,177 @@ body {
   color: #1e90ff;
 }
 
-.main-content {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  top: 120px;
-  width: 500px;
-  background-color: white;
-  border-radius: 4px;
-}
-
-.main-content form {
-  padding: 40px;
-}
-
-.main-content form h2 {
-  font-size: 30px;
-  font-weight: 700;
-  text-align: center;
-  line-height: 1;
-  margin-bottom: 40px;
-  color: #222;
-}
-
-.main-content form input {
-  display: block;
+.main .cloth-temp {
+  height: 90%;
   width: 100%;
-  padding: 12px 15px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  margin-top: 20px;
-  font-size: 13px;
-  line-height: 20px;
+  background-color: #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .cloth-temp i {
+  font-size: 100px;
+  color: #eee;
+}
+
+.main .field {
+  margin-bottom: 10px;
+}
+
+.main .field label {
+  margin-top: 14px;
+  font-size: 15px;
   color: #666;
 }
 
-.main-content form button {
-  margin-top: 20px;
-  width: 100%;
-  cursor: pointer;
-  height: 45px;
-  background-color: #1e90ff;
-  font-size: 13px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: white;
-  border-radius: 4px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+.main .field input,
+.main .field select {
+  display: block;
+  width: 90%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-weight: 600;
+  margin-top: 4px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #222;
 }
 
-.main-content form button:hover {
+.main .field .form-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 40px;
+}
+
+.main .field .form-control input {
+  width: 56px;
+  height: 43px;
+  border: 1px solid #ebebeb;
+  border-width: 1px 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  padding-left: 16px;
+}
+
+.main .field .form-control button {
+  width: 32px;
+  height: 43px;
+  background: none;
+  border: 1px solid #ebebeb;
+  font-size: 12px;
+  color: #222;
+  cursor: pointer;
+  border-radius: 3px 0 0 3px;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+.main .field .form-control button:last-child {
+  border-radius: 0  3px 3px 0;
+}
+
+.main .btn-save {
+  background-color: #1e90ff;
+  padding: 12px 20px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin-left: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  position: absolute;
+  right: 80px;
+  bottom: 40px;
+}
+
+.main .btn-save:hover {
   opacity: 0.9;
 }
-/*# sourceMappingURL=userChangePass.css.map */
+
+.form-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 40px;
+}
+
+.form-control input {
+  width: 48px;
+  height: 43px;
+  border: 1px solid #ebebeb;
+  border-width: 1px 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  padding-left: 16px;
+}
+
+.form-control button {
+  width: 30px;
+  height: 43px;
+  background: none;
+  border: 1px solid #ebebeb;
+  font-size: 12px;
+  color: #222;
+  cursor: pointer;
+  border-radius: 3px 0 0 3px;
+}
+
+.form-control button:last-child {
+  border-radius: 0  3px 3px 0;
+}
+
+.product-form {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-form label {
+  display: inline-block;
+  color: #222;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.4px;
+  line-height: 37px;
+  margin-bottom: 10px;
+  min-width: 70px;
+}
+
+.product-form select {
+  margin-bottom: 10px;
+  padding: 8px 30px 8px 14px;
+  border: 1px solid #ebebeb;
+  border-radius: 2px;
+  color: #222;
+  font-size: 13px;
+  line-height: 19.5px;
+}
+/*# sourceMappingURL=adminViewProd.css.map */
